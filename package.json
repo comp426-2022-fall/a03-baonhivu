@@ -1,0 +1,26 @@
+{
+  "name": "node-dice",
+  "version": "1.0.0",
+  "description": "Creating a module-based line Node.js package (with CLI)",
+  "main": "./lib/roll.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2022-fall/a03-baonhivu.git"
+  },
+  "author": "baonhivu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/comp426-2022-fall/a03-baonhivu/issues"
+  },
+  "homepage": "https://github.com/comp426-2022-fall/a03-baonhivu#readme"
+  "type": "module",
+  "bin": {
+   "roll-dice" : "./bin/cli.js"
+  },
+  "dependencies":{
+   "minimist": "^1.2.6"
+  }
+}
