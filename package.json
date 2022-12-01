@@ -3,11 +3,8 @@
   "version": "1.0.0",
   "description": "Creating a module-based line Node.js package (with CLI)",
   "main": "./lib/roll.js",
-  "bin": {
-    "roll-dice": "./bin/cli.js"
-  },
   "scripts": {
-    "test": "roll-dice --sides=10 --dice=2 --rolls=3"
+    "test": "npm ./bin/cli.js"
   },
   "repository": {
     "type": "git",
@@ -19,9 +16,11 @@
     "url": "https://github.com/comp426-2022-fall/a03-baonhivu/issues"
   },
   "homepage": "https://github.com/comp426-2022-fall/a03-baonhivu#readme",
-  "dependencies": {
-    "mininist": "^1.2.7",
-    "roll": "^1.3.1"
+  "type": "module",
+  "bin": {
+     "roll-dice": "./bin/cli.js"
   },
-  "type": "module"
+  "dependencies": {
+    "mininist": "^1.2.7"
+  }
 }
